@@ -1,4 +1,4 @@
-# Medical Diagnosis ETL Pipeline with Apache Airflow
+# ETL-пайплайн для диагностики заболеваний
 
 ##  Содержание
 - Цель проекта
