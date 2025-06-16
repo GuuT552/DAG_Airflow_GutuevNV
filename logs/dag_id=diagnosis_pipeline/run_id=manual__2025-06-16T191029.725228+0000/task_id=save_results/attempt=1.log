@@ -1,0 +1,15 @@
+[2025-06-16T19:10:36.893+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: diagnosis_pipeline.save_results manual__2025-06-16T19:10:29.725228+00:00 [queued]>
+[2025-06-16T19:10:36.897+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: diagnosis_pipeline.save_results manual__2025-06-16T19:10:29.725228+00:00 [queued]>
+[2025-06-16T19:10:36.898+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-06-16T19:10:36.906+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): save_results> on 2025-06-16 19:10:29.725228+00:00
+[2025-06-16T19:10:36.913+0000] {standard_task_runner.py:57} INFO - Started process 401 to run task
+[2025-06-16T19:10:36.916+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'diagnosis_pipeline', 'save_results', 'manual__2025-06-16T19:10:29.725228+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/diagnosis_pipeline_dag.py', '--cfg-path', '/tmp/tmpmo0pb8tn']
+[2025-06-16T19:10:36.917+0000] {standard_task_runner.py:85} INFO - Job 6: Subtask save_results
+[2025-06-16T19:10:36.956+0000] {task_command.py:416} INFO - Running <TaskInstance: diagnosis_pipeline.save_results manual__2025-06-16T19:10:29.725228+00:00 [running]> on host b95d2a4af95c
+[2025-06-16T19:10:37.006+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='diagnosis_pipeline' AIRFLOW_CTX_TASK_ID='save_results' AIRFLOW_CTX_EXECUTION_DATE='2025-06-16T19:10:29.725228+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-16T19:10:29.725228+00:00'
+[2025-06-16T19:10:37.007+0000] {save_results.py:8} INFO - Archiving results...
+[2025-06-16T19:10:37.025+0000] {save_results.py:17} INFO - Results archived to results/archive/2025-06-16
+[2025-06-16T19:10:37.026+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-06-16T19:10:37.033+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=diagnosis_pipeline, task_id=save_results, execution_date=20250616T191029, start_date=20250616T191036, end_date=20250616T191037
+[2025-06-16T19:10:37.048+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-06-16T19:10:37.060+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
