@@ -51,18 +51,18 @@ graph TD
 
 ## 🚀 Запуск проекта
 
-### 1. Построй и запусти контейнеры
+### 1. Построение и запуск контейнеров
 ```bash
 docker compose build
 docker compose up -d
 ```
 
-### 2. Инициализируй Airflow
+### 2. Инициализация Airflow
 ```bash
 docker compose run --rm airflow airflow db init
 ```
 
-### 3. Создай админа
+### 3. Создание админа
 ```bash
 docker exec -it airflow_pipeline airflow users create `
   --username admin `
@@ -73,7 +73,7 @@ docker exec -it airflow_pipeline airflow users create `
   --email admin@example.com
 ```
 
-### 4. Перейди в UI
+### 4. Заход в UI
 ```
 http://localhost:8080
 ```
