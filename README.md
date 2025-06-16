@@ -135,7 +135,6 @@ http://localhost:8080
 ![DAG graph view](screenshots/dag_graph.png)
 ![Task success](screenshots/task_success.png)
 
-(добавь изображения в папку `/screenshots/` при необходимости)
 
 ---
 
